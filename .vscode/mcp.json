@@ -1,0 +1,11 @@
+{
+    "servers": {
+        "dynamic-openapi-server": {
+            "command": "venv/bin/python",
+            "args": [
+                "server.py",
+                "https://fakerestapi.azurewebsites.net/swagger/v1/swagger.json"
+            ]
+        }
+    }
+}
