@@ -1,10 +1,19 @@
 {
     "servers": {
-        "dynamic-openapi-server": {
-            "command": "venv/bin/python",
+        "dynamic-openapi-server-fakerestapi": {
+            "type": "stdio",
+            "command": "${workspaceFolder}/venv/bin/python",
             "args": [
-                "server.py",
+                "${workspaceFolder}/server.py",
                 "https://fakerestapi.azurewebsites.net/swagger/v1/swagger.json"
+            ]
+        },
+        "dynamic-openapi-server-petstore": {
+            "type": "stdio",
+            "command": "${workspaceFolder}/venv/bin/python",
+            "args": [
+                "${workspaceFolder}/server.py",
+                "https://petstore.swagger.io/v2/swagger.json"
             ]
         }
     }
